@@ -103,7 +103,7 @@ public class Job {
         final StringBuilder builder = new StringBuilder();
 
         if(id > 0 && (name == null || name.length() == 0) && employer == null && location == null && positionType == null && coreCompetency == null){
-            return "OOPS! This job does not seem to exist";
+            return "ID: " + id + "\n"+ "OOPS! This job does not seem to exist";
         }
         if (id == 0) {
             builder.append('\n').append("ID: ").append(noData).append("\n");
